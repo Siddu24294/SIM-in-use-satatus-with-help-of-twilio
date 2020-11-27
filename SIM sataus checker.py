@@ -8,6 +8,7 @@ client = Client(account_sid, auth_token)
 call_connected=False
 
 while 1:
+	if call_connected:break
 	try :
 		call = client.calls.create(
 			url='http://demo.twilio.com/docs/voice.xml',   # message for phone lost
